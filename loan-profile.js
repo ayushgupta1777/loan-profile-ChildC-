@@ -606,68 +606,9 @@ const handleReceipt = () => {
         <div className="dropdown-item" onClick={() => setIsModalOpen2(true)}>
           <span className="icon">💵</span> TOP-DOWN
         </div>
-        {/* <div className="dropdown-item">
-          <span className="icon">📦</span> Archive
-        </div>
-        <div className="dropdown-item">
-          <span className="icon">🔗</span> Move
-        </div>
-        <div className="dropdown-item delete">
-          <span className="icon">🗑️</span> Delete
-        </div> */}
       </div>
     </div>
 
-
-      {/* Summary Section */}
-      {/* <div className="summary">
-      <div className="row-s">  
-      <span>Start Date: {new Date(startDate).toLocaleDateString('en-GB')}</span>
-      <button className="btn">Edit</button>
-        </div>  
-        <div className="row-s total-lent">  
-          <span>Total Lent: </span>
-          <span className='number'>₹ {formatToIndianCurrency(totalLoanAmount)}</span>
-          <button class="delete-btn">Delete</button>  
-        </div>  
-        <div className="row-s">  
-          <span>Total Left: </span>
-        </div>  
-        <div className="row-sd interest-total">
-
-          <div className='col'>
-          <span>Interest: </span>  
-          <span className='number'>{formatToIndianCurrency(Math.floor(totalInterest || 0))}</span>  
-          </div>
-
-          <div className='col'>
-          <span>Total Amount:  </span>
-          <span className='number'>{formatToIndianCurrency(Math.floor(grandTotal))}</span> 
-           </div>
-        </div> 
-
-
-        <div className="last-update">
-          <span>Last Updated: {new Date(updatedAt).toLocaleDateString('en-GB')}</span>
-        </div>
-
-        
-        <button class="show-details-btn" onClick={DetailPage}>Show Details</button>
-        </div> */}
-  
-      {/* <div className="interest">
-        <div className="row">
-          <span>Interest Rate: {interestRate}%</span>
-          <span>{interestFrequency} Calculation</span>
-        </div>
-        {compoundInterest?.enabled && (
-          <div className="row">
-            <span>Compound Frequency: {compoundInterest.frequency || 'None'}</span>
-          </div>
-        )}
-      </div> */}
-  
-      {/* <div className="actions"> */}
 
       {isModalOpen && (
       <div className="modal-overlay" onClick={handleCloseModal}>
