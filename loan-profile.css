@@ -260,7 +260,6 @@
 
   .card-purple {
     width: 100%;
-    /* height: 190px; */
     height: 90%;
     aspect-ratio: 1 / 1;
     display: flex;
@@ -366,17 +365,13 @@
         }
         
 
-/* inerest circular   */
 
-/* Interest Rate Circle */
 .progress-container {
 display: flex;
 flex-direction: column;
 align-items: center;
-/* margin-top: 30px; */
 background: white;
 padding: 20px;
-/* border-radius: 20px; */
 box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
 
@@ -497,13 +492,6 @@ margin-top: 5px;
   color: #333;
   user-select: none;
 }
-
-
-
-
-/* footer */
-
-/* Footer Main Container */
 .footer {
   background: #f9f9f9;
   padding: 40px 0 20px;
@@ -632,18 +620,14 @@ margin-top: 5px;
     max-width: 200px;
     /* margin-bottom: 20px; */
   }
-
   .footer-center {
     margin-top: 50px;
     text-align: center;
     flex-grow: 1;
   }
-
 }
-
 /* dropdown-container */
 
-/* Dropdown Container (Fixed Bottom-Right) */
 .dropdown-container {
   position: fixed;
   bottom: 20px;
@@ -730,7 +714,6 @@ margin-top: 5px;
   font-size: 16px;
 }
 
-  /* Summary Section */
   .summary {
     margin: 20px auto;
     background: #fff;
@@ -755,18 +738,6 @@ margin-top: 5px;
     /* align-items: center; */
     margin-bottom: 15px;
   }
-  /* .col{
-    display: flex;
-    flex-direction: column;
-    align-items: flex;
-    width: 100%;
-    margin-top: 15px;
-    padding: 10px 10px;
-    font-size: 16px;
-    background-color: whitesmoke;
-
-  } */
-  
   .row-s span {
     flex: 1;
     font-size: 14px;
@@ -907,7 +878,7 @@ margin-top: 5px;
     }
 
     .last-update {
-      background-color: #1d3557; /* Dark blue background */
+      background-color: #1d3557; 
       color: white;
       text-align: center;
       padding: 3px 6px;
@@ -916,38 +887,13 @@ margin-top: 5px;
       font-weight: 500;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
       max-width: fit-content;
-      /* margin: 10px auto; */
     }
     
     .last-update span {
       display: inline-block;
       padding: 5px;
     }
-    
-    
   }
-  
-  /* Action Buttons */
-  /* .actions {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-  }
-  
-  .actions button {
-    flex: 1 1 calc(33.333% - 10px);
-    background-color: #17a2b8;
-    color: #fff;
-    border: none;
-    padding: 10px 12px;
-    border-radius: 4px;
-    text-align: center;
-    cursor: pointer;
-  }
-  
-  .actions button:hover {
-    background-color: #138496;
-  } */
 
   /* signature  */
   .sigCanvas {
@@ -958,9 +904,6 @@ margin-top: 5px;
 
   /* Menu Bar Container */
 .actions {
-  /* display: flex;
-  justify-content: center;
-  align-items: center; */
   background: #1a1b26; /* Dark background */
   border-radius: 1px;
   padding: 10px 20px;
@@ -974,8 +917,6 @@ margin-top: 5px;
   display: flex;
     flex-wrap: wrap;
     gap: 10px;
-    /* justify-content: center;
-  align-items: center; */
 }
 .actiion-group2{
   display: flex;
@@ -983,7 +924,6 @@ margin-top: 5px;
     gap: 10px;
     margin: 40px auto;
     /* justify-content: center;
-  align-items: center; */
 }
 
 .actiion-group3{
@@ -992,9 +932,6 @@ margin-top: 5px;
     gap: 10px;
     justify-content: center;
     align-items: center; 
-    /* margin: 40px auto; */
-    /* justify-content: center;
-  align-items: center; */
 }
 .actiion-group3 button{
   padding: 7px;
@@ -1050,27 +987,6 @@ margin-top: 5px;
     width: 100%;
   }
 }
-
-
-  /* Full-Screen Container */
-/* .app-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  background: #f5f5f5;
-} */
-
-/* Button */
-/* .menu-item {
-  font-size: 18px;
-  padding: 10px 20px;
-  background: #0084ff;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-} */
 
 /* Close (X) Button */
 .close-button {
