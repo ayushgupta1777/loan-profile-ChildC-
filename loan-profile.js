@@ -266,39 +266,6 @@ const LoanProfile = () => {
     setLoading(false);
   };
 
-//   const calculateDailyInterest = (amount, interestRate) => {
-//     const dailyRate = (interestRate / 100) / 30; // Assuming 30 days in a month
-//     return dailyRate * amount; // Daily interest for the amount
-//   };
-  
-//   const calculateAccruedInterest = (amount, interestRate, startDate) => {
-//     const today = new Date();
-//     const start = new Date(startDate);
-//     const elapsedDays = Math.floor((today - start) / (1000 * 60 * 60 * 24)); // Convert ms to days
-//     const dailyInterest = calculateDailyInterest(amount, interestRate);
-//     return dailyInterest * elapsedDays; // Total accrued interest
-//   };
-  
-//   // Calculate accrued interest dynamically
-//   let accruedInterest = 0;
-//   let totalAmount = 0;
-  
-//   if (loanDetails) {
-//     const { amount, interestRate, startDate } = loanDetails.loanDetails;
-//     accruedInterest = calculateAccruedInterest(amount, interestRate, startDate);
-//     totalAmount = amount + accruedInterest; // Total amount = principal + accrued interest
-//   } 
-
-//   let totalLeft = 0;
-
-// if (loanDetails) {
-//   const { amount, interestRate, startDate } = loanDetails.loanDetails;
-//   accruedInterest = calculateAccruedInterest(amount, interestRate, startDate);
-//   totalAmount = amount + accruedInterest;
-//   totalLeft = totalAmount - amount; // Calculate the remaining amount (if applicable)
-// }
-
-
 const handleImageChange = (e) => {
   const file = e.target.files[0];
   if (file) {
@@ -408,57 +375,14 @@ if (loading) {
   return (
     <Loan_detail_loading/>
 
-  )}
-
-// <div 
-// className="container" 
-// style={{
-//   display: "flex",
-//   justifyContent: "center",
-//   alignItems: "center",
-//   height: "100vh", // Full height of the viewport (optional)
-//   width: "100%", // Full width of the container
-//   background: "transparent", // Explicitly set transparent background
-
-// }}
-// >
-// <ThreeDot color="#3168cc" size="medium" text="" textColor="" />
-// </div>;
-
   if (error)  
   {
     return (
       <Loan_detail_loading/>
-  
     )}
-  
-  
-  // <div 
-  // className="container" 
-  // style={{
-  //   display: "flex",
-  //   justifyContent: "center",
-  //   alignItems: "center",
-  //   height: "100vh", // Full height of the viewport (optional)
-  //   width: "100%", // Full width of the container
-  //   background: "transparent", // Explicitly set transparent background
-  
-  // }}
-  // >
-  // <ThreeDot color="#3168cc" size="medium" text="Error" textColor="" />
-  // </div>;
-
-
-// const handleReceipt = () => {
-//   navigate(`/receipt/${customerID}`, { state: { profile, loanDetails } });
-// };
-
 const handleReceipt = () => {
   navigate(`/Loc_AI/${customerID}`);
 };
-
-
-
   const { loanType, amount,  interestRate, startDate, compoundInterest, interestFrequency, remarks, billNo, remainingPrincipal, topUpTotal } = loanDetails?.loanDetails || {};
   const { accruedInterest, totalAmount,topdownInterest  } = loanDetails?.loanDetails || {};
   const { updatedAt, profileImage } = loanDetails || {};
@@ -468,10 +392,6 @@ const handleReceipt = () => {
   // const topUpTotal = loanDetails?.loanDetails.topUpHistory?.reduce((sum, topUp) => sum + topUp.amount, 0) || 0;
 
   const totalLoanAmount = amount + topUpTotal;
-
-  
-
-
   const topUpInterest = loanDetails?.loanDetails?.topUpInterest || 0;
   
   const totalInterest = accruedInterest + topUpInterest ;
@@ -490,15 +410,8 @@ const handleReceipt = () => {
     { title: "Net Profit", value: "629,00", percentage: "-8.8%", change: "vs previous month", className: "card" },
     { title: "Cash at end of month", value: "7.684,00", percentage: "4.9%", change: "vs previous month", className: "card" },
   ];
-
-
   const percentage = 10;
   const barPercentage = 8;
-
-
-
-
-
   return (
     <div Name="loan-profile">
       {/* Header Section */}
@@ -625,30 +538,6 @@ const handleReceipt = () => {
         <div className="progress-label">Interest Rate</div>
       </div>
     </div>
-
-    {/* <div className="centered-container">
-      <div className="unique-circular-container" onClick={handleClick}>
-        <svg className="unique-circular-svg" viewBox="0 0 100 100">
-        <defs>
-            <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="0%">
-              <stop offset="0%" stopColor="#34d399" />
-              <stop offset="100%" stopColor="#3b82f6" />
-            </linearGradient>
-          </defs>
-
-          <circle className="unique-circle-bg" cx="50" cy="50" r="45" />
-          <circle
-            className="unique-circle-progress"
-            cx="50"
-            cy="50"
-            r="45"
-            style={{ strokeDashoffset: 283 - (progress / 100) * 283 }}
-          />
-        </svg>
-        <span className="unique-button-text">Read More</span>
-      </div>
-    </div> */}
-
      <div className="note-container">
                 {isEditing ? (
                   <textarea
@@ -673,16 +562,7 @@ const handleReceipt = () => {
 
     <footer className="footer">
       <div className="footer-container">
-        
-        {/* Left Side - Adjusted Content */}
-        {/* <div className="footer-left">
-          <p>Creative solutions</p>
-          <p>for growth.</p>
-          <p>Innovative designs</p>
-          <p>every day.</p>
-          <p>We build brands</p>
-          <p>with care.</p>
-        </div> */}
+
 
         {/* Center Section - Logo & Navigation */}
         <div className="footer-center">
